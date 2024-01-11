@@ -10,6 +10,7 @@ public class UserDaoTest {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         // ApplicationContext를 구현한 클래스는 여러가지
         // 그중 @Configuration이 붙은 자바 코드를 설정 정보로 사용하려면 AnnotationConfigApplicationContext() 사용
+        // 애플리케이션 컨텍스트 = IoC 컨텍스트 = 스프링 컨테이너 = 빈 팩토리 '=' 오브젝트 팩토리 (자바)
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(DaoFactory.class);
 
